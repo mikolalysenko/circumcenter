@@ -2,8 +2,12 @@ circumcenter
 ============
 Computes the [circumcenter](http://en.wikipedia.org/wiki/Circumcenter) of a simplex.  That is, it is the center of an [n-sphere](http://en.wikipedia.org/wiki/N-sphere) passing through n+1 points.
 
-Usage
-=====
+[![testling badge](https://ci.testling.com/mikolalysenko/circumcenter.png)](https://ci.testling.com/mikolalysenko/circumcenter)
+
+[![build status](https://secure.travis-ci.org/mikolalysenko/circumcenter.png)](http://travis-ci.org/mikolalysenko/circumcenter)
+
+#Usage
+
 First install using npm:
 
     npm install circumcenter
@@ -21,10 +25,10 @@ console.log(circumcenter([[0,0], [0,1], [1,1]]))
 //
 ```
 
-### `require("circumcenter")(points)`
+#### `require("circumcenter")(points)`
 Computes the circumcenter of a collection of points
 
-### `require("circumcenter").barycentric(points)`
+#### `require("circumcenter").barycentric(points)`
 Computes the circumcenter in barycentric coordinates
 
 Credits
