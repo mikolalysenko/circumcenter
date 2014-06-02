@@ -17,6 +17,7 @@ function barycentricCircumcenter(points) {
   if(N === 0) {
     return []
   }
+  
   var D = points[0].length
   var A = dup([points.length+1, points.length+1], 1.0)
   var b = dup([points.length+1], 1.0)
@@ -48,7 +49,7 @@ function barycentricCircumcenter(points) {
   return y
 }
 
-function cricumcenter(points) {
+function circumcenter(points) {
   if(points.length === 0) {
     return []
   }
@@ -63,5 +64,5 @@ function cricumcenter(points) {
   return result
 }
 
-cricumcenter.barycenetric = barycentricCircumcenter
-module.exports = cricumcenter
+circumcenter.barycenetric = barycentricCircumcenter
+module.exports = circumcenter
